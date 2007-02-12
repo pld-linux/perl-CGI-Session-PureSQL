@@ -6,7 +6,7 @@
 %define		pdir	CGI
 %define		pnam	Session-PureSQL
 Summary:	CGI::Session::PureSQL - driver with no embedded Perl stored in the database
-Summary(pl):	CGI::Session::PureSQL - sterownik nie przechowuj±cy osadzonego Perla w bazie danych
+Summary(pl.UTF-8):   CGI::Session::PureSQL - sterownik nie przechowujÄ…cy osadzonego Perla w bazie danych
 Name:		perl-CGI-Session-PureSQL
 Version:	0.54
 Release:	1
@@ -28,8 +28,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 CGI::Session::PureSQL - driver with no embedded Perl stored in the
 database.
 
-%description -l pl
-CGI::Session::PureSQL - sterownik nie przechowuj±cy osadzonego Perla w
+%description -l pl.UTF-8
+CGI::Session::PureSQL - sterownik nie przechowujÄ…cy osadzonego Perla w
 bazie danych.
 
 %prep
