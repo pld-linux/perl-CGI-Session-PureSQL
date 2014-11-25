@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_with	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	CGI
 %define		pnam	Session-PureSQL
+%include	/usr/lib/rpm/macros.perl
 Summary:	CGI::Session::PureSQL - driver with no embedded Perl stored in the database
 Summary(pl.UTF-8):	CGI::Session::PureSQL - sterownik nie przechowujący osadzonego Perla w bazie danych
 Name:		perl-CGI-Session-PureSQL
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	1c8e9eff4a11b1b9e0fb2dbc2d50f13c
+URL:		http://search.cpan.org/dist/CGI-Session-PureSQL/
 BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -40,7 +41,7 @@ bazie danych.
 	installdirs=vendor \
 	destdir=$RPM_BUILD_ROOT
 ./Build
-				
+
 %{?with_tests:./Build test}
 
 %install
